@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // let text = ['kairat','aizada','dokturbek',]
+    // let g=text[0].length
+    // let m='';
+    // for (let a=0 ;a<text.length; a++){
+    //   if(text[a].length>g){ 
+    //     g=text[a].length  
+    //     m=text[a]
+    //   }
+    // }
+    // alert(m)
+      
+    let text = ['kairat aizada']
+    for (let a=0 ;a<text[0].length;a++){
+      console.log(text [0][a])
+    }
+   
+    let a= +prompt('Koddu jaz')
+    let atm =[
+        {pin: '272510', price: 80},
+        {pin: '282310', price: 300},
+        {pin: '272511', price: 200},
+        {pin: '272512', price: 100},
+        {pin: '272513', price: 500},
+        ]
+   
+    for (let b=0;b<atm.length; b++) {
+      if (atm[b].pin==a) {
+        alert(atm[b].price)
+      } 
+    }
+    
+
+
+  </script>
+</body>
+</html>

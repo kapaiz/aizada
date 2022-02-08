@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"></link>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ <title></title>
+ <style type="text/css">
+
+ 	img{
+ 		width: 380px;
+ 		height: 300px;
+ 		padding: 0px;
+ 	}
+ 	
+ </style>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"> Besoft teach</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <form class="d-flex">
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Курсы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Студенты</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">Новости</a>
+         </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#">Регистрация</a>
+          </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Войти</a>
+           </li>
+      </ul>
+      </div>
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="input">
+      <button class="btn btn-outline-success" type="button" id="btn">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div class="row  justify-content-center" id="div">
+ 	
+</div>
+ <script type="text/javascript">
+  let mass = [
+                {
+                    title: 'text',
+                    price: '2030',
+                    img: 'https://www.avasflowers.net/img/prod_img/avasflowers-dreaming-of-tuscany-bouquet.jpg',
+                },
+                {
+                    title: 'text',
+                    price: '2030',
+                    img: 'https://cdn.atwilltech.com/flowerdatabase/b/bring-on-the-happy-vase-of-flowers-VA02512.425.jpg',
+                },
+                {
+                    title: 'text',
+                    price: '2030',
+                    img: 'https://assets.eflorist.com/assets/products/PHR_/TEV56-3A.jpg',
+                },
+                {
+                    title: 'text',
+                    price: '2030',
+                    img: 'https://cdn1.1800flowers.com/wcsstore/Flowers/images/catalog/95097lx.jpg',
+                },
+                {
+                    title: 'text',
+                    price: '2030',
+                    img: 'https://images.bunches.co.uk/products/large/3376-pazug-1.jpg',
+                },
+                {
+                    title: 'text',
+                    price: '2030',
+                    img: 'https://ahsam.imgix.net/images/itemVariation/BP400AzeleaSpr202135-05-21031170303.jpg?auto=format&w=375&h=450&fit=crop',
+                },
+                {
+                    title: 'text',
+                    price: '2030',
+                    img: 'https://asset.bloomnation.com/c_pad,d_vendor:global:catalog:product:image.png,f_auto,fl_preserve_transparency,q_auto/v1605498968/vendor/4261/catalog/product/2/0/20200315013613_file_5e6d868d4e02b_5e6d87771e4c8.png',
+                },
+                {
+                    title: 'text',
+                    price: '2030',
+                    img: 'https://asset.bloomnation.com/c_pad,d_vendor:global:catalog:product:image.png,f_auto,fl_preserve_transparency,q_auto/v1605444494/vendor/7238/catalog/product/2/0/20190501054140_file_5cc9da54ce62a_5cc9dd8ab5076.jpg',
+                },
+               
+            ]
+          
+
+   let div = document .getElementById('div');
+   let input = document.getElementById('input');
+   let btn = document.getElementById('btn');
+   let aa = '';
+   btn.onclick =()=>{
+     let vv = input.value.trim().toLocaleLowerCase();
+     div.innerHTML ='';
+     
+
+    
+   }
+   mass.map (item =>{
+     div.innerHTML +=`
+       <div class="card" style="width: 24rem; padding:0px; margin:10px;">
+              <img src="${item.img}" class="card-img-top;margin-left:10px"  alt="...">
+                <div class="card-body">
+                   <h5 class="card-title">${item.title}</h5>
+                   <p class="card-text">${item.price}</p>
+                   <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-primary" type="button">Go somewhere</button>
+        
+          </div>
+                 </div>
+           </div>
+     `
+
+   })
+
+ </script>
+
+
+
+</body>
+</html>

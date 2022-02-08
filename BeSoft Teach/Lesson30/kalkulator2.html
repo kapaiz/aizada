@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="div1">
+    <div class="div2">
+    <input type="number"  placeholder="NUMBER" class="dd" readonly>
+    <input type="number" placeholder="JOOB" class="bb">
+    <button onclick="input()" class="ac"> AC</button>
+    <button onclick="input('OFF')">OFF</button>
+    <button onclick="backspace()">&#8678;</button>
+    <button onclick="input('+')">+</button>
+    <button onclick="input('-')">-</button>
+    <button onclick="input('*')">&times;</button>
+    <button onclick="input('/')">&divide;</button>
+    <button onclick="input('%')">%</button>
+    <button onclick="input('=')">=</button>
+    <button onclick="input('7')">7</button>
+    <button onclick="input('8')">8</button>
+    <button onclick="input('9')">9</button>
+    <button onclick="input('4')">4</button>
+    <button onclick="input('5')">5</button>
+    <button onclick="input('6')">6</button>
+    <button onclick="input('1')">1</button>
+    <button onclick="input('2')">2</button>
+    <button onclick="input('3')">3</button>
+    <button onclick="input('0')">0</button>
+    <button onclick="input('.')">.</button>
+    <button onclick="input('√')">√</button>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    const dd = document.querySelector('.dd');
+          result = document.querySelector('.bb');
+
+    function input(i) {
+      dd.value = dd.value + i
+    }
+
+    function result(){
+      result.value = eval(dd.value);
+      dd.value = eval(dd.value);
+    }
+
+    function backspace(){
+      dd.value = dd.value.substring(0, dd.value.length-1)
+    }
+  </script>
+</body>
+</html>

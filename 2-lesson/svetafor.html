@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div  style="width:100px;height:300px;background-color: black;">
+        <center><div id="gog" style="width:90px;height:90px;background-color:red;border-radius:50%;"></div></center>
+        <center><div id="gogg" style="width:90px;height:90px;background-color:silver;border-radius:50%;"><div id="div" style="position: absolute;font-size: 50px; color: black;top: 20px;left: 35px; transform: translate(-50%; -50%);"></div></div></center>
+        <center><div id="goggg" style="width:90px;height:90px;background-color:silver;border-radius:50%;"></div></center>
+    </div> 
+     <script type="text/javascript"> 
+        let div = document.getElementById('div'); 
+        let gog = document.getElementById('gog');
+        let gogg = document.getElementById('gogg');
+        let goggg = document.getElementById('goggg');
+        let ss = 0; 
+        let vv = true; 
+        let stop_ = null;
+        let r = 0;
+        function dd() { 
+        stop_=setInterval(() =>{ 
+        div.innerHTML = ss ++ 
+        if(ss===30&&r===0){
+          ss=0
+          gog.style = 'width:90px;height:90px;background-color:silver;border-radius:50%;'
+          gogg.style = 'width:90px;height:90px;background-color:yellow;border-radius:50%;'
+          div.style = "position: absolute;font-size: 50px; color: black;top: 100px;left: 35px; transform: translate(-50%; -50%);"
+            r+=1
+        }
+        if(ss===30&&r===1){
+            ss=0
+            goggg.style = 'width:90px;height:90px;background-color:green;border-radius:50%;'
+            gogg.style = 'width:90px;height:90px;background-color:silver;border-radius:50%;'
+            r+=1
+            div.style = "position: absolute;font-size: 50px; color: black;top: 200px;left: 35px; transform: translate(-50%; -50%);"
+        }
+        if(ss===30&&r===2){
+            ss=0
+            gog.style = 'width:90px;height:90px;background-color:red;border-radius:50%;'
+            goggg.style = 'width:90px;height:90px;background-color:silver;border-radius:50%;'
+            div.style = "position: absolute;font-size: 50px; color: black;top: 20px;left: 35px; transform: translate(-50%; -50%);"
+            r=0
+        }
+        },100); 
+        } 
+        dd()  
+     </script>
+    
+</body>
+</html>

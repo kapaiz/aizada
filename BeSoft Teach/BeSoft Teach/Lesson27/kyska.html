@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="input" name="">
+  <button id="btn">blue</button>
+  <div id="div">
+
+  </div>
+
+  <script type="text/javascript">
+    // 5+5==10 ? alert('true') : alert('dgsf')
+
+    // let div =document.getElementById('div');
+    // let btn = document.getElementById('btn')
+    // let input = document.getElementById('input')
+    // input.oninput = (event) =>{
+    //   console.log(event.target.value)
+    // }
+
+    let div =document.getElementById('div');
+    let btn = document.getElementById('btn')
+    let input = document.getElementById('input')
+    let text =''
+    let inputtext = document.getElementById('input').value
+    input.oninput = (event) =>{
+      text = event.target.value;
+    };
+    
+    btn.onclick = () =>{
+      div.innerText = text;
+      input.value='';
+      
+    }
+    
+   
+ 
+  </script>
+</body>
+</html>

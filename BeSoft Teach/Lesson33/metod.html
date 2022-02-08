@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <input id="inp" type="text">
+  <button onclick="add()">Ok</button>
+  <div id="div"></div>
+  <script type="text/javascript">
+    // let str = 'Nurmuhammed';
+    // console.log(str.includes('e '))
+    let inp = document.getElementById('inp');
+    let div = document.getElementById('div')
+    let a = '';
+    function add(){
+      a = inp.value;
+      inp.value = ""
+      for (let i=0; i <= a.length-1; i++){
+        if(i % 2 ==0){
+          div.innerHTML += a[i].toUpperCase()
+        
+        }else{
+          div.innerHTML += a[i].toLowerCase()
+          
+        };
+      }
+    }
+  </script>
+</body>
+</html>

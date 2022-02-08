@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    let san= +prompt('san')
+    let tamga= prompt('tamga')
+    if(8>=san && san>0){
+      if (san % 2==1 && tamga=='A'||tamga=='C'||tamga=='E'||tamga=='G'){
+      alert('Kara')
+    }
+    else if (san%2==1){
+      alert('kara')
+    }
+    else if(san % 2==0 &&  tamga=='B'||tamga=='D'||tamga=='F'||tamga=='H'){
+      alert('Ak'+(san+tamga))
+    }
+    else if (san%2==0){
+      alert('ak')
+    }
+    }
+    else {
+      alert('Andai tamga jok')
+    }
+  </script>
+</body>
+</html>

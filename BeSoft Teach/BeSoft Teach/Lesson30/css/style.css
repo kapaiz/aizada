@@ -1,0 +1,50 @@
+
+.div1{
+  width: 450px;
+  height: 750px;
+  border: solid 2px black;
+  position: relative;
+  border-radius: 20px;
+  left: 40%;
+  top: 20px;
+  background-color: grey;
+ 
+}
+.div2{
+  width: 400px;
+  height: 700px;
+  border: solid 2px black;
+  position: absolute;
+  border-radius: 10px;
+  left: 5%;
+  top: 25px;
+  background-color: black;
+  
+}
+input{
+  width: 90%;
+  height: 60px;
+  display: block;
+  margin: 20px 0 0 15px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.ac{
+  background-color: #EB2719;
+  border-radius: 10px;
+}
+
+button{
+  font-size: 50px;
+  margin: 10px 0px 0px 15px;
+  border-radius: 10px;
+  width: 110px;
+  height: 60px;
+  background-color:grey;
+  font-weight: bold;
+}
+button:hover{
+  box-shadow: 1px 1px 10px 10px #fff;
+}
+

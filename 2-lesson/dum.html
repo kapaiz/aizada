@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div>
+		<button id="btn">Скрыть</button>
+		<div id="img"><img src="https://images.unsplash.com/photo-1546587348-d12660c30c50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJhbHxlbnwwfHwwfHw%3D&w=1000&q=80">
+		</div>
+		
+
+
+	</div>
+	<!-- <div>
+	     <button id="btn" style="color: red;background: blue">addbtn</button>
+	</div> -->
+
+
+	<script type="text/javascript">
+		// let btn = document.getElementById('btn');
+		// let v = true;
+		// btn.onclick = function(){
+
+		// 	v = !v;
+
+		// 	if (v) {
+		// 		btn.innerText = 'скрыть';
+		// 		btn.style.background='grey';
+		// 		document.body.style.background='red'
+
+		// 	}else{
+		// 		btn.innerText = 'Показать'
+		// 		btn.style.background='green';
+		// 		document.body.style.background='green'
+				
+		// 	}
+		// };
+
+
+
+
+		let img = document.getElementById('img');
+		let btn = document.getElementById('btn');
+		let v = true;
+		btn.onclick = function(){
+			v = !v;
+			if (v) {
+				img.style.display = 'block';
+				btn.innerText = 'Скрыть';
+			}else{
+				btn.innerText = 'Показать';
+				img.style.display = 'none';
+			}
+		};
+
+
+		
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <button id="Ok1" onclick="ed('+')">Ok+</button>
+  <button id="Ok2" onclick="ed()">Ok-</button>
+  <div id="div" style="font-size:20px;">Hello</div>
+  <script type="text/javascript">
+    let Ok1 = document.getElementById('Ok1')
+    let Ok2 = document.getElementById('Ok2')
+    let div = document.getElementById('div')
+    let rzm = 20;
+
+    function ed(e=''){
+      e == '+' ? rzm += 5 : rzm -= 5;
+      div.style.fontSize=`${rzm}px`;  
+    }
+
+      let asan = ['fhsygfj','sdjay','aduygd']
+        let uson = asan.join(' " "')
+        console.log(uson)
+  </script>
+  <!-- 
+  push
+  map  
+  splice-карайбыз 
+  sort
+  join
+  
+  стринг
+ 'toLocalLowerCase'
+ 'toLocalUpperCase'
+ 'substring'
+  -->
+</body>
+</html>

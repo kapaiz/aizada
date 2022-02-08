@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+ <style type="text/css">
+   .a{
+      position: absolute;
+      background-color: red;
+      left: 30px;
+      bottom: 30px;
+      box-shadow: red 5px 5px 30px 30px;
+
+   } 
+
+   .aa{
+      position: absolute;
+      background-color: blue;
+      right: 30px;
+      bottom: 30px;
+      box-shadow: blue 5px 5px 30px 30px;
+   }
+
+   .n{
+      position: absolute;
+      /* background-color: #fff; */
+      top: 50px;
+      left: 45%;
+      box-shadow: yellow 5px 5px 30px 30px;
+   }
+
+   .b{
+      width: 200px;
+      height: 100px;
+      font-size: 50px;
+      border-radius: 10px;
+
+   }
+ </style>
+</head>
+
+<body id="b">
+  <!-- <button onclick="Add(2022)">Add</button>
+  <button onclick="asan()">clear</button> -->
+  <!-- <div id="asan" align="center">
+  </div> -->
+
+  <button onclick="redr()" class="a b">red</button>
+  <button onclick="blue()" class="aa b">blue</button>
+  <button onclick="ak()" class="n b">ak</button>
+
+
+  <script type="text/javascript">
+    // let a = document.getElementById ('asan')
+    //   function Add(d){
+    //     a.innerText = 'hello onclick'+d
+    //   };
+    //   function asan() {
+    //     a.innerText = ''
+    //   };
+
+    let b = document.getElementById('b')
+      function redr(){
+        b.style.backgroundColor = "red"
+      }
+      function blue(){
+        b.style.backgroundColor = "blue"
+      }
+      function ak(){
+        b.style.backgroundColor = "#fff"
+      }
+
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.div1{
+  position: absolute;
+  left: 50%;
+  top: 400px;
+  font-size: 30px;
+}
+
+.div2{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  border: solid 1px black;
+  font-size: 30px;
+  border-radius: 20px;
+  background-color: #838996;
+  padding: 10px;
+}
+
+.div3{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border: solid 1px black;
+  font-size: 30px;
+  border-radius: 20px;
+  background-color: #838996;
+  padding: 10px;
+}

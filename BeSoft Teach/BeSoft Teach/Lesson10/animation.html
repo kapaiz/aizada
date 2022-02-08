@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    .flex{
+      display: flex;
+    }
+    .name{
+       width: 100%;
+      background-color: gray;
+      animation-name: color;
+      animation-duration: 10s;
+      transition: 3s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes color{
+      0%{
+        width: 0px;
+        width: 0px;
+        background-color: greenyellow;
+      }
+      50%{
+        width: 100%;
+        height: 50px;
+        background-color: hotpink;
+      }
+      100%{
+        width: 0px;
+        height: 0px;
+        background-color: red;
+      }
+    }  
+    .css3{
+      width: 500px;
+      height: 500px;
+      border-radius: 100%;
+      background-color: blue;
+      position: relative;
+      
+    }
+    .img{
+      width: 300px;
+      height: 300px;
+      top: 100px;
+      right: 100px;
+      position: absolute;
+      animation-name: img2;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+      
+    }
+    @keyframes img2{
+      0%{
+        transform: rotate(-0.2turn);
+      }
+      50%{
+        transform: rotate(0.2turn);
+      }
+      100%{
+        transform: rotate(-0.2turn);
+      }
+    }
+    .border{
+      width: 600px;
+      height: 600px;
+      border: black solid 2px;
+      position: relative;
+      margin-bottom: 50px;
+     
+    }
+    .card{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      background-color: blue;
+      animation-name: block;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+      animation-direction: alternate-reverse;
+    }
+    @keyframes block{
+      0%{
+        left: 0px;
+      }
+      25%{
+        top: 0%;
+        left: 100%;
+        transform: translate(-100%,0%);
+        background-color: green;
+      }
+      50%{
+        left: 100%;
+        top: 100%;
+        transform: translate(-100%,-100%);
+        background-color: greenyellow;
+      }
+      75%{
+        top: 100%;
+        left: 0%;
+        transform: translate(0%,-100%);
+        background-color: red;
+      }
+      100%{
+        top: 0%;
+        left: 0%;
+       background-color: brown;
+      }
+    }
+    .border2{
+      width: 600px;
+      height: 600px;
+      border: black solid 2px;
+      position: relative;
+      margin-bottom: 50px;
+    }
+    .card2{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      background-color: blue;
+      animation-name: block2;
+      animation-iteration-count: infinite;
+      animation-duration: 10s;
+    }
+    @keyframes block2{
+      0%{
+        left: 0px;
+      }
+      12%{
+        top: 0%;
+        left: 100%;
+        transform: translate(-100%,0%);
+        background-color: green;
+      }
+      24%{
+        left: 100%;
+        top: 100%;
+        transform: translate(-100%,-100%);
+        background-color: greenyellow;
+      }
+      36%{
+        top: 100%;
+        left: 0%;
+        transform: translate(0%,-100%);
+        background-color: red;
+      }
+      48%{
+        top: 0%;
+        left: 0%;
+        transform: translate(0%,0%);
+        background-color: brown;
+      }
+        60%{
+        left: 0%;
+        top: 100%;
+        transform: translate(0%,-100%);
+      }
+      72%{
+        top: 100%;
+        left: 100%;
+        transform: translate(-100%,-100%);
+        background-color: green;
+      }
+      84%{
+        left: 100%;
+        top: 0%;
+        transform: translate(-100%,0%);
+        background-color: greenyellow;
+      }
+      100%{
+        top: 0%;
+        left: 0%;
+        transform: translate(0%,0%);
+        background-color: red;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  
+  <div class="name">
+    Animation
+  </div>
+  <div class="flex">
+    <div class="css3">
+      <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="">
+    </div>
+
+    <div class="border">
+      <div class="card">
+      </div>
+    </div>
+
+    <div class="border2">
+      <div class="card2">
+      </div>
+    </div>
+  </div>
+  drection
+</body>
+</html>

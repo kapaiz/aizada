@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<!-- 1 <input type="text" id="input">
+	<button id="btn">ok</button>
+	<div id="div"></div> -->
+	 <input type="text" id="input">
+	<button id="btn">ok</button>
+	<div id="div"></div>
+
+	<script type="text/javascript">
+		// 1 let div = document.getElementById('div')
+		// let input = document.getElementById('input')
+		// let btn = document.getElementById('btn')
+
+		// let a = ''
+		// btn.onclick = () =>{
+		// 	 a = input.value
+		// 	 input.value = ''
+
+
+
+		// 	 for( let i = 0; i <= a.length -1 ; i++){
+		//      	if ( i%2 ==0) {
+		//      		div.innerHTML += a[i].toLocaleUpperCase()
+		//      	} else
+		//      	div.innerHTML += a[i].toLocaleLowerCase()
+  //    }
+
+		// }
+		 let div = document.getElementById('div')
+		let input = document.getElementById('input')
+		let btn = document.getElementById('btn')
+
+		let a = ''
+		btn.onclick = () =>{
+			 a = input.value
+			 input.value = ''
+
+
+
+			 for( let i = 0; i <= a.length -1 ; i++){
+		     	if ( i==0) {
+		     		div.innerHTML += a[i].toLocaleUpperCase()
+		     	} else
+		     	div.innerHTML += a[i].toLocaleLowerCase()
+     }
+
+		}
+
+     
+		
+		
+		
+
+	</script>
+
+</body>
+</html>

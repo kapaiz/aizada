@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="asan"></div>
+  <script type="text/javascript">
+      let a = prompt('jaz')
+      let x = prompt('jaz')
+      let d = document.getElementById('asan')
+      for(let i=0 ; i<6 ; i++){
+      if(i%2==0){
+        d.innerHTML += `<span
+         style='color: red'>
+        <h${i+1} >${a}  </h${i+1}>
+        </span>`
+      } else{
+        d.innerHTML += `<span
+        style='color: blue'>
+        <h${i+1} >${a}  </h${i+1}>
+        </span>`
+      }
+    }
+
+
+    for(let i=0 ; i<x.length ; i++){
+      
+      if(i%2==0){
+        d.innerHTML += `<span
+        style='color: red; font-size: 40px;'>${x[i]}
+        
+        </span>`
+      } else{
+        d.innerHTML += `<span
+        style='color: blue; font-size: 40px;'>${x[i]}
+       
+        </span>`
+      }
+    }
+  </script>
+</body>
+</html>

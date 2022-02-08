@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+</head>
+<body style="background-color: red;">
+    <div align="center" style="font-size: 100px;">
+        <span class="one">00</span>:
+        <span class="two">00</span>
+    </div>
+
+    <div align="center" style="margin: 10px;">
+     <div style="font-size: 50px" id="div">0c</div>	
+        <button style="margin: 10px" onclick="" id="btn">push</button>
+        <button style="margin: 10px" onclick="" id="btn2">stop</button>
+    </div>
+    <script>
+        let one=document.querySelector(".one");
+        let two=document.querySelector(".two");
+        let div= document.getElementById('div');
+        let btn= document.getElementById('btn');
+        let btn2= document.getElementById('btn2')
+        let f = 0;
+        let g = 0;
+        let card = true
+        let s = ''
+        let r = 0;
+        btn.onclick = ()=>{
+        	s = setInterval(() => {
+                    document.body.style.backgroundColor = 'green'
+                    g++;
+                    two.innerHTML=g > 9 ? g : "0" + g
+                   if( g === 60) {
+                        g = 0;
+                        f++;
+                        r+=50;
+                        one.innerHTML= f > 9 ? f : "0"+f
+                        div.innerHTML = r
+                   }
+                    },50);
+            }
+             btn2.onclick = ()=>{
+            	 clearInterval(s);
+            	}
+
+
+</script>
+</body>
+
+</html>

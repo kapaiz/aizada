@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" onkeypress=" return Asan(event)">
+	<button onclick="ss">ss</button>
+    
+    <script type="text/javascript">
+		let a = '';
+		       function Asan(s){
+		       	a += s.keyCode;
+               if(s.code == 'Enter'){
+        	   console.log(a) 
+               }
+            }
+            function ss () {
+            	if(a == ''){
+
+            	}
+            }
+		 
+	</script> 
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style type="text/css">
+  .container{
+    border: solid 1px black;
+    display: flex;
+  }
+  h1{
+    font-size: 60px;
+  }
+img{
+  width: 500px;
+  height: 300px;
+  transition: 1s;
+}
+.img{
+  display: flex;
+  margin: 20px;
+  overflow: hidden;
+}
+img:hover{
+  transform: scale(1.5);
+}
+.img1:hover{
+  border-radius: 30px;
+  border: solid 2px black;
+}
+.img2:hover{
+  border-radius: 30px;
+  border: solid 2px black;
+}
+.img1{
+  position: relative;
+  transition: 1s;
+}
+.img2{
+  position: relative;
+  transition: 1s;
+}
+p{
+  width: 70%;
+  font-size: 30px;
+  background-color: beige;
+  color: #000;
+  border-radius: 10px;
+  right: -250px;
+  bottom: -160px;
+  transition: 1s;
+  position: absolute;
+}
+.img1:hover>.p1{
+  opacity: 0.5;
+  right: 10px;
+  bottom: 10px;
+}
+.img2:hover>.p2{
+  opacity: 0.5;
+  right: 10px;
+  bottom: 10px;
+}
+</style>
+<body align="center">
+  <h1>Breaking news</h1>
+  <div class="container">
+    <div class="img img1">
+      <img src="https://ss.sport-express.ru/userfiles/materials/171/1713523/don.jpg" alt="">
+      <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veritatis repellat?</p>
+    </div>
+    <div class="img img2">
+      <img src="https://knews.kg/wp-content/uploads/2020/06/or-43012.jpg" alt="">
+      <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatibus fuga?</p>
+    </div>
+  </div>
+</body>
+</html>

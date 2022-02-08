@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="div" style="position: absolute;font-size: 50px; color: green;top: 50%;left: 50; transform: translate(-50%; -50%);"></div>
+
+	<script type="text/javascript">
+		let div = document.getElementById('div');
+		let ss = 0;
+		let vv = true;
+		let stop_ = null;
+	
+
+		function dd() {
+			 stop_=setInterval(() =>{
+				div.innerHTML = ss ++
+			},100);
+		}
+
+		dd()
+
+		document.body.onkeydown = (e) =>{
+			if (e.keyCode == 32 && vv){
+                clearInterval(stop_)
+                vv = !vv
+			} else if(e.keyCode == 32 && !vv){
+				vv = !vv
+				dd()
+			}
+		}
+		
+	</script>
+
+</body>
+</html>

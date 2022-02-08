@@ -1,0 +1,121 @@
+.bg{
+  width: 100%;
+  height: 270px;
+  background-color: blue;
+  color: #fff;
+  font-size: 30px;
+  padding: 10px;
+
+}
+.icon{
+  width: 10%;
+  height: 170px;
+  border-radius: 100%;
+  animation-name: icons;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1s;
+}
+@keyframes icons{
+  0%{
+    transform: rotate(-0.1turn);
+  }
+  100%{
+    transform: rotate(0.1turn);
+  }
+}
+.istore{
+  font-family: Aa_ Oktom_ Tens Cb;
+  font-size: 50px;
+  display: block;
+  animation-name: shadow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes shadow{
+  0%{
+    text-shadow:  1px 1px 3px;
+  }
+  50%{
+    text-shadow: #fff 3px 3px 20px;
+  }
+  100%{
+    text-shadow: #fff 1px 1px 3px;
+  }
+}
+.poisk{
+  width: 70%;
+  font-size: 40px;
+  margin: 20px;
+  border: 1px solid #B5CFD3;
+  border-radius: 10px;
+}
+.block{
+  width: 80%;
+  display: inline-flex;
+  padding: 10px;
+  background-color: #A6BDC1;
+  border-radius: 10px;
+}
+.syrty{
+  width: 20%;
+  background-color: #fff;
+  transition: 1s;
+  color: #536872;
+  margin: 10px;
+}
+.syrty:hover{
+  border-radius: 20px;
+  box-shadow: red 0px 0px 50px;
+}
+.img{
+  width: 90%;
+  height: 200px;
+  
+}
+.img2{
+  width: 81%;
+  margin: 20px;
+}
+.block2{
+  width: 70%;
+  display: inline-flex;
+  margin: 10px;
+}
+.card{
+width: 33%;
+background-color: #D1EEF3;
+}
+.img3{
+  width: 90%;
+  height: 400px;
+  margin: 10px;
+  transition: 1s;
+}
+.img3:hover{
+ transform: scale(0.9);
+ border-radius: 20px;
+ box-shadow: blue 0px 0px 50px;
+}
+h2{
+  width: 80%;
+  background-color: yellow;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+button{
+  width: 85%;
+  background-color: blue;
+  color: #fff;
+  font-size: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.futer{
+  font-size: 20px;
+  background-color: blue;
+  color: #fff;
+  padding: 20px;
+}

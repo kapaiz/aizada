@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    let a= prompt('san jazynyz')
+    let p = 0
+    for (let i = 0 ; i<a.length;i++){
+      if('I' == a[i]) {
+        p+=1
+      }
+      if ('I'==a[i] && 'V' == a[i+1]){
+        p += -2
+      }
+      if ('V' == a[i]){
+        p += 5
+      }
+      if ('I' == a[i] && 'X' == a[i+1]){
+        p += -2
+      }
+      if ('X' == a[i]){
+        p += 10
+      }
+      if ('X' == a[i] && 'L' == a[i+1]){
+        p += -20
+      }
+      if ('L' == a[i]){
+        p +=50
+      }
+      if ('X' == a[i] && 'C' == a[i+1]){
+        p += -20
+      }
+      if ('C' == a[i]){
+        p +=100
+      }
+      if ('C' == a[i] && 'D' == a[i+1]){
+        p += -200
+      }
+      if ('D' == a[i]){
+        p +=500
+      }
+      if ('C' == a[i] && 'M' == a[i+1]){
+        p += -200
+      }
+      if ('M' == a[i]){
+        p +=1000
+      }
+    }
+    alert(p)
+  </script>
+</body>
+</html>

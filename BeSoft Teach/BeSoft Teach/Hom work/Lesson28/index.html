@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style>
+  .ff{
+    background-color: black;
+    color: #fff;
+  }
+</style>
+<body>
+  <input id="inp" type="text">
+  <button onclick="add()">Ok</button>
+  <div class="FF" id="div"></div>
+  <script type="text/javascript">
+
+    let inp = document.getElementById('inp');
+    let div = document.getElementById('div')
+    let a = '';
+    function add(){
+      a = inp.value;
+      inp.value = ""
+      for (let i=0; i <= a.length-1; i++){
+        if(i==0){
+          div.innerHTML += a[i].toUpperCase()
+        
+        }else{
+          div.innerHTML += a[i].toLowerCase()
+          
+        };
+      }
+    }
+  </script>
+</body>
+</html>

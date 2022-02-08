@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body id="mm">
+  <h1>color text</h1>
+  <input type="text"  id="colortext">
+  <input type="button" id="colorButton" value="click to change color" onclick="changeColor()">
+
+  <script type="text/javascript">
+    let nn=document.getElementById('mm')
+    let cc=document.getElementById('colorButton')
+    let xx=document.getElementById('colortext')
+    cc.onclick=function color(){
+      document.body.style.backgroundColor = color;
+      nn.style.background=xx.value
+     
+    }
+  </script>
+</body>
+</html>

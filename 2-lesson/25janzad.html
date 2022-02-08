@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.card{
+			font-size: 100px;
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+
+</head>
+<body>
+	<div class="card" id="div">Hello world</div>
+	<script type="text/javascript">
+		let div = document.getElementById('div');
+		let body_=document.body;
+
+		body_.onkeyup = (e) => {
+				if(e.keyCode===72){
+					div.innerHTML.style +=`${color:'red'}%`
+				}
+		}
+			
+	</script>
+
+</body>
+</html>

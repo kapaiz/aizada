@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body style="cursor: pointer;
+background-color: #b9b7b9">
+  <h1 style="font-size: 60px; font-family: Aa_ Oktom_ BCyrillic; text-align: center;
+  color: blue;">Facebook</h1>
+  <h1 id='welcome' style="font-size: 80px; font-family: Aa_ Oktom_ BCyrillic; text-align: center;
+  color: green; display: none;">
+    Welcome!
+  </h1>
+  <div id="div1" align="center">
+      <div style="width: 600px; height: 70px;
+        background-color: #fff;
+        color: #6E7F80;
+        border-bottom:solid 1px black">
+        <b style="color: black; font-size: 30px;">Создать аккаунт</b> <br>
+        Быстро и легко
+      </div>
+      <div style="width: 600px; height: 800px;
+        background-color: #fff;">
+        <div>
+            <input id="imya" style="width: 270px; height: 50px; margin: 10px;" type="text" placeholder="Имя">
+            <input id="familya" style="width: 270px; height: 50px; margin: 5px;" type="text" placeholder="Фамилия">
+            <input id="e" style="width: 568px; height: 50px; margin: 10px;" type="email" placeholder="Номер мобильного телефон или эл.адрес">
+            <input id="p" style="width: 568px;height: 50px; margin: 10px;" type="password" placeholder="Новый пароль">
+            <div id="div2" style="color: red; margin-bottom: 10px; display: none;">
+              The password youve entered is incorrect. Forgot Password?
+            </div>
+            <div align='center' style="font-size: 20px; ">
+              Дата рождения
+            </div>
+            <select id="aa" style="width: 182px; height: 50px;">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option>
+            </select>
+            <select id="ff" style="width: 182px; height: 50px; margin: 10px;">
+              <option>январь</option>
+              <option>Февраль</option>
+              <option>Март</option>
+              <option>Апрель</option>
+              <option>Май</option>
+              <option>Июн</option>
+              <option>Июл</option>
+              <option>Августь</option>
+              <option>Сентябрь</option>
+              <option>Октябь</option>
+              <option>Ноябрь</option>
+              <option>Декабрь</option>
+            </select>
+            <select id="ss" style="width: 182px; height: 50px;">
+              <option>2021</option>
+              <option>2000</option>
+              <option>2001</option>
+              <option>2002</option>
+            </select><br>
+            Пол 
+            <p>
+            <label id="dd" for="N" style="width: 182px; 
+            height: 50px; border: 
+            black solid 1px;
+            font-size: 30px;
+            background-color: #fff;">
+              Женщина
+              <input  type="radio" name="a" id="N">
+            </label>
+            <label id="tt" for="T" style="width: 182px; 
+            height: 50px; 
+            margin: 10px; 
+            border: black solid 1px;
+            font-size: 30px;
+            background-color: #fff;">
+              Мужчина
+              <input type="radio" name="a" id="T">
+            </label>
+            <label id="bb" for="B" style="width: 182px; 
+            height: 50px;  
+            border: black solid 1px;
+            font-size: 30px;
+            background-color: #fff;">
+              Другое
+              <input type="radio" name="a" id="B">
+            </label></p>
+            Нажимая кнопку Регистрация, вы принимаете <a href="https://www.facebook.com/about/privacy/update"> Условия, Политику использования данных и Политику в отношении файлов cookie.</a> Вы можете получать от нас SMS-уведомления, отказаться от которых можно в любой момент. <p>
+            <button onclick="add()" style="font-size: 30px; border-radius: 10px; cursor: pointer; margin: 10px; background-color: green;">
+                  Регистрация
+            </button>
+            <br>
+          </div>
+        </div>
+    </div>
+
+        <script>
+            let imya = document.getElementById('imya')
+            let cc = document.getElementById('familya')
+            let e = document.getElementById('e')
+            let p = document.getElementById('p')
+            let div = document.getElementById('div1')
+            let div2 = document.getElementById('div2')
+            let welcome = document.getElementById('welcome')
+          let tet = '';
+          let tex = '';
+          let text = '';
+          let porol = '';
+
+          imya.oninput = (nn) =>{
+            tet = nn.target.value
+          };
+          cc.oninput = (cc) =>{
+            tex = cc.target.value
+          }
+          e.oninput = (event) => {
+            text = event.target.value
+          }
+
+          p.oninput = (event) => {
+              porol = event.target.value
+            }
+
+            function add(params) {
+              if(porol == 123 && text == 'Nur' && tet == 'Nurmuhammed' && tex == 'Kudayarov') {
+                div.style.display = 'none'
+                welcome.style.display = 'block'
+              } else {
+                  aa.style.borderColor = 'red'
+                  ff.style.borderColor = 'red'
+                  ss.style.borderColor = 'red'
+                  dd.style.borderColor = 'red'
+                  tt.style.borderColor = 'red'
+                  bb.style.borderColor = 'red'
+                  imya.style.borderColor = 'red'
+                  cc.style.borderColor = 'red'
+                  e.style.borderColor = 'red'
+                  p.style.borderColor = 'red'
+                  e.style.color = 'red'
+                  p.style.color = 'red'
+                  div2.style.display = 'block'
+              }
+            }
+        
+        </script>
+        </body>
+        </html>

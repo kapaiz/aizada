@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<input type="text" id="input" >
+	<button id="btn1">ok</button>
+	<button id="btn2">delete</button>
+	<div id="div"></div>
+
+	<script type="text/javascript">
+		let div = document.getElementById('div');
+		let btn1 = document.getElementById('btn1');
+		let btn2 = document.getElementById('btn2');
+		let input = document.getElementById('input');
+		
+		let ss = []
+		btn1.onclick = ()=>{
+			let v = input.value
+			input.value=''
+			div.innerHTML = ''
+			ss.push(v)
+			localStorage.setItem('name',JSON.stringify(ss))
+
+			let g = JSON.parse(localStorage.getItem('name'))
+			console.log(g)
+			g.map(e => {				
+             div.innerHTML += `<li>${e}<button onclick="close(${s})">X</button></li>`
+			});
+		}
+			btn2.onclick = ()=>{
+				let r = confirm('Вы уверены')
+				clearInterval()
+			}
+			function close (s) { 
+				let xx = name.splice(s,1)
+				console.log(xx)
+				
+			}
+			
+
+				
+				
+
+			
+		
+
+		
+	</script>
+
+
+</body>
+</html>

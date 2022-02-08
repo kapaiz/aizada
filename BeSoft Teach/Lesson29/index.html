@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Island+Moments&family=Luxurious+Roman&family=Neonderthaw&family=Roboto+Condensed&family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div style="color: #fff; font-size: 60px;" id="pro" class="div1">
+    
+  </div>
+  <div id="color" class="div2">
+  
+  </div>
+  <div id="shrift" class="div3">
+   
+  </div>
+  <script type="text/javascript">
+    let font = 0;
+    let bg = 0;
+    let d = prompt('text')
+
+    const color = ['blue','black','yellow','green','#fff'];
+    const fonts = ['"Comforter", cursive',"'Island Moments', cursive","'Luxurious Roman', cursive","'Neonderthaw', cursive","'Roboto Condensed', sans-serif","'The Nautigal', cursive"]
+     
+    let text =document.getElementById('pro');
+    let color_ =document.getElementById('color');
+    let shrift=document.getElementById('shrift');
+      text.innerText=d;
+
+      text.style.fontFamily = fonts[font]
+        shrift.innerText = fonts[font]
+     shrift.onclick = function() {
+      font++
+        text.style.fontFamily = fonts[font]
+        shrift.innerText = fonts[font]
+        
+        if(font>fonts.length -2){
+          font=0
+        }
+
+     }
+     document.body.style.backgroundColor=color[bg]
+       color_.innerText = color[bg]
+
+     color_.onclick = function () {
+       bg++
+       document.body.style.backgroundColor=color[bg]
+       color_.innerText = color[bg]
+       
+       if(bg>=color.length -1){
+        bg=0
+       }
+     }
+  </script>
+</body>
+</html>

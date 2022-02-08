@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="div"></div>
+	<input type="" id="input">
+	<button id="btn">ok</button>
+	<button id="btn2">delete</button>
+	<script type="text/javascript">
+		let input = document.getElementById('input');
+		let btn = document.getElementById('btn');
+		let btn2 = document.getElementById('btn2');
+		let div = document.getElementById('div');
+		let ss= []
+
+		btn.onclick = ()=>{
+			let v = input.value
+			input.value = ''
+			div.innerHTML = ''
+			ss.push(v)
+			localStorage.setItem('name',JSON.stringify(ss))
+
+
+
+			let g = JSON.parse(localStorage.getItem('name'))
+			console.log(g)
+
+			g.map(e => {
+				
+				
+          div.innerHTML += `<div>${e}<button>X</button></div>`
+
+			});
+		}
+	
+		function close_(i) {
+				let d = confirm('FEF')
+			if(d==true){
+				ss.splice(i,1)
+			localStorage.setItem('name',JSON.stringify(ss))
+
+			}else()
+			
+			// body...
+		}
+
+		
+
+		
+		
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style type="text/css">
+    .n{
+      width: 200px;
+      height: 100px;
+      border-radius: 10px;
+      font-size: 40px;
+      position: absolute;
+      background-color: red;
+      left: 45%;
+      top: 50px;
+      box-shadow: yellow 5px 5px 30px 30px;
+      text-shadow: black   4px 3px;
+   }
+   .bn{
+    width: 200px;
+      height: 100px;
+      border-radius: 10px;
+      font-size: 40px;
+      position: absolute;
+      background-color: red;
+      left: 45%;
+      top: 200px;
+      box-shadow: yellow 5px 5px 30px 30px;
+      text-shadow: black   4px 3px;
+   }
+
+  </style>
+</head>
+<body id="m">
+
+  <div>
+    <button id='btn' onclick="Red()" class="n">Red</button>
+    <div id="img"><img src="http://d39raawggeifpx.cloudfront.net/styles/16_9_desktop/s3/articleimages/Tien_Shan_Mountains_Kyrgyzstan_-_58_(48682781346)_Cropped.jpg"></div>
+  </div>
+
+ 
+  <button id="blue" class="bn">r</button>
+
+  <script type="text/javascript">
+    let img = document.getElementById('img');
+    let btn = document.getElementById('btn')
+    let v = true;
+      function Red(){
+        v=!v
+        if(v){
+          img.style.display = 'block';
+          btn.innerText = 'скрыть';
+        }else{
+          btn.innerText = "показать";
+          img.style.display = 'none'
+        }
+      }
+    
+    let m = document.getElementById('m');
+    let blue = document.getElementById('blue');
+    let b = true;
+    blue.onclick =  function(){
+        b = !b
+        if(b){
+          m.style.backgroundColor = "red"
+          blue.innerText = 'kyzyl'
+          blue.style.backgroundColor = 'red'
+        }
+        else{
+          blue.innerText = 'kok'
+          m.style.backgroundColor = "blue"
+          blue.style.backgroundColor = 'blue'
+        }
+      }
+  </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <div id="asan">
+    
+  </div>
+  <script type="text/javascript">
+    let a='Hello DOM'
+    let d = document.getElementById('asan')
+    for(let i=0 ; i<a.length ; i++){
+      
+      if(i%2==0){
+        d.innerHTML += `<span
+        style='color: red'>${a[i]}
+        
+        </span>`
+      } else{
+        d.innerHTML += `<span
+        style='color: blue'>${a[i]}
+       
+        </span>`
+      }
+    }
+    for(let i=0 ; i<6 ; i++){
+      if(i%2==0){
+        d.innerHTML += `<span
+        style='color: red'>
+        <h${i+1} >${a}  </h${i+1}>
+        ${[i]}
+        </span>`
+      } else{
+        d.innerHTML += `<span
+        style='color: blue'>
+        <h${i+1} >${a}  </h${i+1}>
+        ${[i]}
+        </span>`
+      }
+    }
+  </script>
+  
+</body>
+</html>

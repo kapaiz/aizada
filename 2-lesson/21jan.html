@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="div">
+		<input type="" id="input">
+	</div>
+	
+ <script type="text/javascript">
+ 	let Telefon = [
+   {
+    name: 'Samsung',
+    text: 'Samsung text',
+    price: '30000',
+   },
+   {
+    name: 'Nokia',
+    text: 'Nokia text',
+    price: '25000',
+   },
+   {
+    name: 'Honor',
+    text: 'Honor text',
+    price: '35000',
+   },
+
+  ]
+ 	let div = document.getElementById('div');
+ let input = document.getElementById('input')
+
+ input.oninput = (e) => {
+  let vv = '';
+  Telefon.map(r => {
+   vv = e.target.value.trim()
+
+    vv =  vv.toLocaleLowerCase();
+    b = r.name.toLocaleLowerCase()
+
+   if (b.includes(vv) && vv.length  > 0 ) {
+    div.innerHTML += 
+      `<div>
+       <div>1: ${r.name}</div>
+       <div>2: ${r.text}</div>
+       <div>3: ${r.price} </div>
+       </div>`
+   }
+  })
+ }
+ </script>
+
+</body>
+</html>

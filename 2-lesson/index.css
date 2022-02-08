@@ -1,0 +1,28 @@
+.bg{
+    background-image:url("https://www.cnet.com/a/img/P08u5ECVwDUE4hxplUX6Ex9HWII=/1200x630/2021/06/11/1dc729b9-2e28-4955-a5ba-5e5384fdac20/model-s-plaid-ogi.jpg");
+  }
+  .tesla{
+    text-align: center;
+    font-size: 100px;
+    color: gray;
+    font-family: A97_Oktom_Aksent;
+    text-shadow: #000 10px 10px ;
+  }
+  .img{
+    width: 90%;
+    height: 800px;
+    margin: 20px 5% 20px 5%;
+  }
+  .div2{
+    margin: 20px  20px;
+  }
+  
+  .div1{
+    height: 200px;
+    
+  }
+  
+  .nav2{
+    font-size: 50px;
+  }
+  
